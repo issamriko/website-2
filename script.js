@@ -4,8 +4,8 @@ const tenantId = "website2"; // Change for each website (website1, website2, web
 
 // Register User
 async function register() {
-  const email = document.getElementById("regEmail").value;
-  const password = document.getElementById("regPassword").value;
+  const email = document.getElementById("reg-email").value;
+  const password = document.getElementById("reg-password").value;
 
   const response = await fetch(`${backendUrl}/api/auth/register`, {
     method: "POST",
